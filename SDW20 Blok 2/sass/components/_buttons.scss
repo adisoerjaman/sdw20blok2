@@ -1,0 +1,27 @@
+%btn {
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 5pt;
+    font-family: $font-stack;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-primary {
+    @extend %btn;
+    background-color: $primary-color;
+    color: $dark-color;
+    &:hover {
+        background-color: $light-color;
+    }
+}
+.btn-outline {
+    @extend %btn;
+    border: solid $light-color 3px;
+    color: $light-color;
+    &:hover {
+        background-color: $primary-color;
+    }
+}

@@ -1,0 +1,83 @@
+@import "./utilities/variables";
+@import "./utilities/fonts";
+@import "./layout/header";
+@import "./components/buttons";
+
+body {
+    margin: 0;
+    background-color: $bg-color;
+}
+
+.home-row-1 {
+    height: 100vh;
+    background-image: url(/img/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // background: transparent\0.5;
+    display: flex;
+    align-items: flex-end;
+    .bg-overlay {
+        background-color: $bg-color;
+        height: 100vh;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.65;
+    }
+    .comp-1 {
+        padding: 0 140px 160px;
+        width: 900px;
+        z-index: 2;
+    }
+    h1 {
+        margin: 0;
+        font-family: $font-stack;
+        font-size: 64px;
+        font-weight: 500;
+        color: $light-color;
+        text-transform: uppercase; 
+    }
+    .h-primary {
+        color: $primary-color;
+    }
+    p {
+        font-family: $font-text;
+        font-size: 34px;
+        color: $light-color;
+    }
+    .btn-menu {
+        width: 550px;
+        display: flex;
+        justify-content: space-between;
+    }
+    // .btn-primary {
+    //     width: 250px;
+    //     height: 50px;
+    //     background-color: $primary-color;
+    //     border-radius: 5pt;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     font-size: 24px;
+    //     text-decoration: none;
+    //     font-family: $font-stack;
+    //     color: $dark-color;
+    // }
+    // .btn-outline {
+    //     width: 250px;
+    //     height: 50px;
+    //     border: solid $light-color 3px;
+    //     border-radius: 5pt;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     font-size: 24px;
+    //     text-decoration: none;
+    //     font-family: $font-stack;
+    //     color: $light-color;
+    // }
+}
